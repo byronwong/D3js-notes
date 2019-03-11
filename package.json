@@ -1,0 +1,38 @@
+{
+  "name": "starter-kit",
+  "version": "1.0.0",
+  "description": "Basic starter kit running express only",
+  "private": true,
+  "scripts": {
+    "prestartOLD": "npx babel-node app.js",
+    "startOLD": "node app.js",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "starter-kit"
+  ],
+  "author": "Byron Wong",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.1.1",
+    "file-loader": "^3.0.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "opn": "^5.4.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-middleware": "^3.6.1",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
