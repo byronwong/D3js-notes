@@ -32,9 +32,6 @@ form > button:hover {
 #letters {
   margin: 20px auto 0;
   width: 800px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
 }
 
 .letter {

@@ -1,11 +1,3 @@
 import './style.css';
-
-function component() {
-  let element = document.createElement('div');
-
-
-  return element;
-}
-
-document.body.appendChild(component());
+// import * as d3 from "d3";
 
