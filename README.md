@@ -132,6 +132,8 @@ inputBox.on('input', function(){
 
 #### General update pattern
 
+[Resource in depth](https://d3indepth.com/enterexit/)
+
 1. Grab update selection 
   - make any changes to selection 
   - store selection
@@ -144,5 +146,21 @@ inputBox.on('input', function(){
 
 4. Merge enter and update selection 
   - make changes to share selections
+
+
+#### Extrema and Scales
+(Scales)[https://d3indepth.com/scales/]
+```js
+
+d3.max([arry]) // returns the largest number in the set
+
+d3.min([arry]) // returns the smallest number in the set
+
+var arry = [{prop1: 'A', prop2: 3}. {...}, {...}]
+
+d3.max(arry, d => {d.prop2}) // returns the largest of d.prop2
+
+
+```
 
 

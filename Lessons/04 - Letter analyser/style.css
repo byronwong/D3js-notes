@@ -29,19 +29,27 @@ form > button:hover {
   background-color: #6a6a8e;
 }
 
+svg {
+  background-color: #f0f0f0;
+}
+
 #letters {
   margin: 20px auto 0;
   width: 800px;
 }
 
-.letter {
+.letter rect {
   display: inline-block;
   text-align: center;
   background-color: #ffc800;
   vertical-align: bottom;
 }
 
-.new {
+.new rect {
   font-size: 1.5em;
   color: #ffffff;
+}
+
+.new text {
+  font-size: 1.5em;
 }
