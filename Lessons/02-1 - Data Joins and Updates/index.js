@@ -45,7 +45,7 @@ function component() {
 
   d3.select('#quotes')
           .style('list-style', 'none')
-      .selectAll('li') // initiall there are no 'li' but D3 still reutrns a selection with no nodes
+      .selectAll('li') // initially there are no 'li' but D3 still reutrns a selection with no nodes
       .data(quotes) // tell D3 what the data is
       .enter() // create a D3 selection of enter nodes containing data objects
       .append('li')

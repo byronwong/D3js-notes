@@ -83,7 +83,7 @@ startBtn.on('click', () => {
 let resetBtn = d3.select('#reset');
 
 resetBtn.on('click', () => {
-  event.preventDefault();
+  event.preventDefault(); // d3's own event object!!!
   lastResults = '';
   let results = frequencyCounter(lastResults);
   chartFrequency(results);

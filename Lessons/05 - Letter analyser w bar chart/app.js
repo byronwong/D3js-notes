@@ -28,6 +28,7 @@ d3.select('form')
     let barPadding = 20;
     let barWidth = width / dataLength - barPadding;
 
+    // update data model
     let existingGElements = svg
       .selectAll('g')
         .data(results, (d,i) => d.character);
