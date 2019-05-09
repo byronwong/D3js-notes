@@ -14,9 +14,9 @@ This is a basic starter-kit that runs a simple express server. Ideally for sandb
 ## What's in this project 
 > Note: Using webpack dev server for now, however express js is still here for further development with webpack-dev-middleware. Change NPM start script!
 
-## D3 Tutorials
-
-API
+## D3 Resources
+[d3 indepth](https://d3indepth.com/)
+[API](https://github.com/d3/d3/blob/master/API.md)
 
 ### Selection
 
@@ -160,7 +160,60 @@ var arry = [{prop1: 'A', prop2: 3}. {...}, {...}]
 
 d3.max(arry, d => {d.prop2}) // returns the largest of d.prop2
 
+// OR 
 
+d3.extent(data, callbackFn); // returns an array with min and max
+// returns [min, max] array
+
+// example 
+d3.scaleLinear()
+  .domain(d3.extent(people, d => d.age)) // here we return the array with the values
+  .range(height, 0);
+
+
+
+
+```
+### Filtering data for null 
+```js 
+// create a function that takes an array of objects and creates a new array of objects
+// this function filters out objects with kay value pairs of null
+let data = regionData.filter(dataObject => {
+
+    // keys I want to check null against
+    let keys = [
+      'subscribersPer100',
+      'adultLiteracyRate',
+      'urbanPopulationRate',
+      'extremePovertyRate'
+    ];
+
+    // test for null in object
+    return keys.every(key => {
+      return dataObject[key] !== null;
+    });
+  }
+);
+
+```
+Alternative solution
+
+```js 
+data.filter(d => {
+  let keys = [
+    'subscribersPer100',
+    'adultLiteracyRate',
+    'urbanPopulationRate',
+    'extremePovertyRate'
+  ];
+
+  // keys to test for null
+  for(var i; i < keys.length; i++) {
+    if(d[keys][i]=== null) { return false;}
+    return true;
+  }
+
+});
 ```
 
 
