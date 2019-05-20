@@ -3,10 +3,13 @@ svg {
   display: block;
 }
 
-input{
+input {
+  width: 500px;
   display: block;
-  width: 200px;
   margin: 0 auto;
-  padding: 20px;
+  margin-top: 20px;
+}
+
+.bin-count {
   text-align: center;
 }
