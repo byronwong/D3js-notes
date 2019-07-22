@@ -18,5 +18,9 @@ This is a basic starter-kit that runs a simple express server. Ideally for sandb
 [d3 indepth](https://d3indepth.com/)
 [API](https://github.com/d3/d3/blob/master/API.md)
 
+## Understanding this guide
+- Core understanding are in the notes folder
+- Individual charts and graphs are in the lessons folder
+
 ## Things to do
 - D3 nests
