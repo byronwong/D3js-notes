@@ -18,22 +18,22 @@
   "license": "ISC",
   "dependencies": {
     "chalk": "^2.4.2",
-    "d3": "^5.9.1",
-    "dotenv": "^6.2.0",
-    "express": "^4.16.4",
+    "d3": "^5.9.7",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "css-loader": "^2.1.1",
-    "file-loader": "^3.0.1",
-    "mini-css-extract-plugin": "^0.5.0",
-    "opn": "^5.4.0",
+    "css-loader": "^3.1.0",
+    "file-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "opn": "^6.0.0",
     "style-loader": "^0.23.1",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3",
-    "webpack-dev-middleware": "^3.6.1",
-    "webpack-dev-server": "^3.2.1"
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-dev-server": "^3.7.2"
   }
 }

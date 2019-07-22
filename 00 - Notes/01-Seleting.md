@@ -22,6 +22,7 @@ To access nodes use the `nodes` method not `_groups` NOTE: underscore!
 
 [navigating hierarchies](https://github.com/d3/d3/blob/master/API.md#hierarchies-d3-hierarchy)
 
+
 ## Callbacks
 D3 allows us to set callbacks to programatically determine what happens to each node
 ```js
